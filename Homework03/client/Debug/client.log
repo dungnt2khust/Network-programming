@@ -1,0 +1,6 @@
+﻿  client.cpp
+c:\users\dungg\desktop\fsdfasf\client\client.cpp(178): warning C4101: 'err': unreferenced local variable
+c:\users\dungg\desktop\fsdfasf\client\client.cpp(211): warning C4101: 'err': unreferenced local variable
+c:\users\dungg\desktop\fsdfasf\client\client.cpp(247): warning C4101: 'err': unreferenced local variable
+  client.vcxproj -> C:\Users\dungg\Desktop\fsdfasf\Debug\client.exe
+  client.vcxproj -> C:\Users\dungg\Desktop\fsdfasf\Debug\client.pdb (Full PDB)

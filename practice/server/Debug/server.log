@@ -1,0 +1,5 @@
+﻿  server.cpp
+c:\users\dungg\documents\visual studio 2015\projects\practice\server\server.cpp(242): warning C4101: 'ret': unreferenced local variable
+c:\users\dungg\documents\visual studio 2015\projects\practice\server\server.cpp(296): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> c:\users\dungg\documents\visual studio 2015\Projects\practice\Debug\server.exe
+  server.vcxproj -> c:\users\dungg\documents\visual studio 2015\Projects\practice\Debug\server.pdb (Full PDB)

@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  server.cpp
+c:\z-documents\hust\visual studio 2015\projects\homework_2.5\server\server.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\z-documents\hust\visual studio 2015\projects\homework_2.5\server\server.cpp(82): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> C:\Z-DOCUMENTS\HUST\Visual Studio 2015\Projects\Homework_2.5\Debug\server.exe
+  server.vcxproj -> C:\Z-DOCUMENTS\HUST\Visual Studio 2015\Projects\Homework_2.5\Debug\server.pdb (Full PDB)

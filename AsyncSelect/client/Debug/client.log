@@ -1,0 +1,6 @@
+﻿  client.cpp
+c:\users\dungg\desktop\mydocuments\20202\network programming\asyncselect\client\client.cpp(48): warning C4101: 'err': unreferenced local variable
+c:\users\dungg\desktop\mydocuments\20202\network programming\asyncselect\client\client.cpp(237): warning C4101: 'err': unreferenced local variable
+c:\users\dungg\desktop\mydocuments\20202\network programming\asyncselect\client\client.cpp(270): warning C4101: 'err': unreferenced local variable
+  client.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\AsyncSelect\Debug\client.exe
+  client.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\AsyncSelect\Debug\client.pdb (Full PDB)

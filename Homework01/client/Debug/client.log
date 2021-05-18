@@ -1,0 +1,6 @@
+﻿  client.cpp
+c:\users\dungg\documents\visual studio 2015\projects\homework01\client\client.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\dungg\documents\visual studio 2015\projects\homework01\client\client.cpp(133): warning C4018: '<': signed/unsigned mismatch
+c:\users\dungg\documents\visual studio 2015\projects\homework01\client\client.cpp(50): warning C4101: 'err': unreferenced local variable
+  client.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework01\Debug\client.exe
+  client.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework01\Debug\client.pdb (Full PDB)

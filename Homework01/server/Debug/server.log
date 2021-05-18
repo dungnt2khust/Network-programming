@@ -1,0 +1,7 @@
+﻿  server.cpp
+c:\users\dungg\documents\visual studio 2015\projects\homework01\server\server.cpp(43): warning C4101: 'pAlias': unreferenced local variable
+c:\users\dungg\documents\visual studio 2015\projects\homework01\server\server.cpp(122): warning C4101: 'clientIP': unreferenced local variable
+c:\users\dungg\documents\visual studio 2015\projects\homework01\server\server.cpp(123): warning C4101: 'clientPort': unreferenced local variable
+c:\users\dungg\documents\visual studio 2015\projects\homework01\server\server.cpp(87): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework01\Debug\server.exe
+  server.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework01\Debug\server.pdb (Full PDB)

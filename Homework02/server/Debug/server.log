@@ -1,0 +1,7 @@
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  server.cpp
+c:\users\dungg\documents\visual studio 2015\projects\homework02\server\server.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\users\dungg\documents\visual studio 2015\projects\homework02\server\server.cpp(82): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework02\Debug\server.exe
+  server.vcxproj -> C:\Users\dungg\Documents\Visual Studio 2015\Projects\Homework02\Debug\server.pdb (Full PDB)

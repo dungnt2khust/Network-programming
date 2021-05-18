@@ -1,0 +1,5 @@
+﻿  server.cpp
+c:\users\dungg\desktop\fsdfasf\server\server.cpp(234): warning C4101: 'ret': unreferenced local variable
+c:\users\dungg\desktop\fsdfasf\server\server.cpp(282): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> C:\Users\dungg\Desktop\fsdfasf\Debug\server.exe
+  server.vcxproj -> C:\Users\dungg\Desktop\fsdfasf\Debug\server.pdb (Full PDB)

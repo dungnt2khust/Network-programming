@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  client.cpp
+c:\z-documents\hust\visual studio 2015\projects\homework_2.5\client\client.cpp(48): warning C4101: 'err': unreferenced local variable
+  client.vcxproj -> C:\Z-DOCUMENTS\HUST\Visual Studio 2015\Projects\Homework_2.5\Debug\client.exe
+  client.vcxproj -> C:\Z-DOCUMENTS\HUST\Visual Studio 2015\Projects\Homework_2.5\Debug\client.pdb (Full PDB)

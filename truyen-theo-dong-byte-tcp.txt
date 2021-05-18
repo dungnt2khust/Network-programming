@@ -1,0 +1,63 @@
+cai dat gp4: gui len kich thuoc truoc roi moi gui du lieu
+	sender:
+gets_s(buff, buff_size)
+len = strlen(buff);
+lenStr = inttostring(len)
+send(..., lenStr, ... )
+send(...buff,...)
+	receiver:
+recv(..., lenstr, ...)
+nLeft = StringToInt(lenStr);
+while(nLeft > 0){
+	ret = recv(.., buff, ..)
+	nLeft = nLeft - ret;
+	appendBuffToData(buff, data);
+} //data: du lieu can duoc xu li
+
+cai dat gp3: gui kem kich thuoc thong diep
+	sender:
+gets_s(buff, buff_size)
+len = strlen(buff);
+lenStr = inttostring(len) //4byte
+strcat(lenstr, buff);
+strcpy(buff, lentr);
+send(...,buff,...)
+	receive:
+recv(...,lenstr, 4, MSG_WAITALL) // nhan 4 byte
+nLeft = StringToInt(lendstr)
+
+cai dat gp2: // nen dung
+	sender:
+gets_s(buff, buff_size)
+strcat(buff, "\r\n")
+send(..., buff, ...) // dung vong lap while
+	receiver:
+Delimiter = "\r\n"
+while(1){
+	ret = recv(..., buff, ..)
+	appendBuffToData(data, buff)
+	if(hasDelimiter(data){
+		command = extractFromData(data,Delimiter)
+		process(command)
+	}
+}
+
+Truyen file: // giong voi gp4
+sender:
+size = getFileSize(file);
+send(.., size, ..)
+while(not eof){
+	buff = fread(file)
+	send(..,buff,..) //dung while de gui send
+}
+receive:
+recv(...,size,...)
+nLeft = size;
+while(nLeft > 0{
+	ret = recv(...,buff,...)
+	f.write( file, buff)
+	nLeft = nLeft - ret;
+}
+	
+
+

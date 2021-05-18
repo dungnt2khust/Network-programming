@@ -1,0 +1,4 @@
+﻿  server.cpp
+c:\users\dungg\desktop\mydocuments\20202\network programming\homework04\server\server.cpp(75): warning C4101: 'err': unreferenced local variable
+  server.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\Homework04\Debug\server.exe
+  server.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\Homework04\Debug\server.pdb (Full PDB)
