@@ -227,34 +227,40 @@ void menuAndGetRequest() {
 	printf("\nYOUR CHOOSE IS: ");
 	string chooseString;
 	int choose;
+	bool validChoose = false;
 	gets_s(buff, BUFF_SIZE);
 	chooseString = (string)buff;
 	if (chooseString.length() == 0) {
 		exit(0);
 	}
-	try {
-		choose = stoi(chooseString);
+	for (int i = 0; i < strlen(buff); i++) {
+		if (buff[i] < '0' || buff[i] > '4'|| strlen(buff) > 5) {
+			printf("\nPlease enter a number [1-4]");
+			break;
+		}
+		else {
+			choose = stoi(chooseString);
+			validChoose = true;
+		}
 	}
-	catch (exception &err) {
-		printf("\nPlease enter a number");
-		return;
+	if (validChoose == true) {
+		switch (choose) {
+		case 1:
+			loginClient(buff2);
+			break;
+		case 2:
+			sendToServer(buff2);
+			break;
+		case 3:
+			logOutClient(buff2);
+			break;
+		case 4:
+			exit(0);
+			break;
+		default:
+			printf("\nPlease enter a number [1-4]");
+		}
 	}
-	switch (choose) {
-	case 1:
-		loginClient(buff2);
-		break;
-	case 2:
-		sendToServer(buff2);
-		break;
-	case 3:
-		logOutClient(buff2);
-		break;
-	case 4:
-		exit(0);
-		break;
-	default:
-		printf("\nInvalid choose");
-	}	
 };
 
 

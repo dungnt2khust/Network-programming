@@ -1,5 +1,5 @@
 ﻿  client.cpp
-c:\users\dungg\desktop\mydocuments\20202\network programming\homework05\client\client.cpp(46): warning C4101: 'err': unreferenced local variable
-c:\users\dungg\desktop\mydocuments\20202\network programming\homework05\client\client.cpp(238): warning C4101: 'err': unreferenced local variable
-  client.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\Homework05\Debug\client.exe
-  client.vcxproj -> C:\Users\dungg\Desktop\MYDOCUMENTS\20202\Network programming\Homework05\Debug\client.pdb (Full PDB)
+c:\users\dungg\desktop\network programming\homework05\client\client.cpp(46): warning C4101: 'err': unreferenced local variable
+c:\users\dungg\desktop\network programming\homework05\client\client.cpp(236): warning C4018: '<': signed/unsigned mismatch
+  client.vcxproj -> C:\Users\dungg\Desktop\Network programming\Homework05\Debug\client.exe
+  client.vcxproj -> C:\Users\dungg\Desktop\Network programming\Homework05\Debug\client.pdb (Full PDB)

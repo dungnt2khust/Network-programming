@@ -202,6 +202,10 @@ LRESULT CALLBACK windowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 		if (WSAGETSELECTERROR(lParam)) {
 			for (i = 0; i < MAX_CLIENT; i++)
 				if (client[i] == (SOCKET)wParam) {
+					if (isLogin[i] == true) {
+						writeToLog("QUIT ", accountName[i], resultCode, clientIn4[i]);
+						isLogin[i] = false;
+					}
 					closesocket(client[i]);
 					client[i] = 0;
 					continue;
@@ -234,16 +238,7 @@ LRESULT CALLBACK windowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 				if (client[i] == (SOCKET)wParam)
 					break;
 
-			ret = Receive(client[i], rcvBuff, BUFF_SIZE, 0, accountName[i], clientIn4[i], isLogin[i]);
-			if (ret <= 0) {
-				writeToLog("fsadfd", "fsadfsdf", "fsafasf", "fsadfsf");
-				if (isConnect == true) {
-					if (accountName[i].length() != 0) {
-						writeToLog("QUIT ", accountName[i], resultCode, clientIn4[i]);
-						accountName[i] = "";
-					}
-				}
-			}
+			ret = Receive(client[i], rcvBuff, BUFF_SIZE, 0, accountName[i], clientIn4[i], isLogin[i]);	
 			if (ret > 0) {
 				//echo to client
 				rcvBuff[ret] = 0;	
@@ -256,16 +251,12 @@ LRESULT CALLBACK windowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 		case FD_CLOSE:
 		{
 			for (i = 0; i < MAX_CLIENT; i++)
-				if (client[i] == (SOCKET)wParam) {
+				if (client[i] == (SOCKET)wParam) {	
 					closesocket(client[i]);
-					client[i] = 0;
-					if (accountName[i].length() != 0) {
-						writeToLog("QUIT ", accountName[i], resultCode, clientIn4[i]);
-						accountName[i] = "";
-					}
+					client[i] = 0;	
 					break;
-				}
-		}
+				}	
+			}
 		break;
 		}
 	}
@@ -300,18 +291,8 @@ int Receive(SOCKET s, char *buff, int size, int flags, string &accountUser, stri
 	int n;
 	memset(buff, 0, BUFF_SIZE);
 	n = recv(s, buff, size, flags);
-	if (n == SOCKET_ERROR) {
-		if (WSAGetLastError() == 10054) {
-			writeToLog("fsadfd", "fsadfsdf", "fsafasf", "fsadfsf");
-			if (accountUser.length() != 0) {
-				writeToLog("QUIT ", accountUser, resultCode, clientInfor);
-				accountUser = "";
-				isLogin = false;
-			}
-			isConnect = false;
-		}
-		else
-			printf("\nError %d: Cannot receive data.", WSAGetLastError());
+	if (n == SOCKET_ERROR) {	
+		printf("\nError %d: Cannot receive data.", WSAGetLastError());
 	}
 	return n;
 }
